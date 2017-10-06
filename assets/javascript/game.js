@@ -8,7 +8,7 @@ function renderButtons () {
 
 	for (var i = 0; i < dogBreeds.length; i++) {
 		var a = $("<button>");
-		a.addClass("breeds");
+		a.addClass("breeds btn btn-danger");
 		a.attr("breed-name", dogBreeds[i]);
 		a.text(dogBreeds[i]);
 		$("#dog-buttons").append(a);

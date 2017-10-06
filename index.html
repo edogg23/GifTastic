@@ -16,28 +16,26 @@
 <body>
 
 	<div class="container">
-		<heading>
-			<h1>All About Dogs</h1>
-		</heading>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h1 class="panel-title">All About Dogs</h1>
+			</div>
+			<!-- render the dog buttons here -->
+			<div class="panel-body">
+				<div id="dog-buttons"></div>
 
-		<!-- render the dog buttons here -->
-		<div id="dog-buttons"></div>
+				<!-- dump dog images here -->
+				<div id="dog-breeds"></div>
 
-		<!-- dump dog images here -->
-		<div id="dog-breeds"></div>
+				<form id="dog-form">
+					<label for='dog-input'>Add a dog breed</label>
+					<input type="text" id="dog-input"><br>
 
-		<form id="dog-form">
-			<label for='dog-input'>Add a dog breed</label>
-			<input type="text" id="dog-input"><br>
-
-			<!-- button to add more breeds -->
-			<input type="submit" id="add-breed" value="Add another breed">
-		</form>
-
-
-
-
-
+					<!-- button to add more breeds -->
+					<input type="submit" id="add-breed" value="Add another breed" class="btn btn-success">
+				</form>
+			</div>
+		</div>
 	</div>
 
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
